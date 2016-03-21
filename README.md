@@ -9,7 +9,7 @@ This package is to be used in conjunction with the [`ibus-core`](https://github.
 Usage
 -----
 
-_** NOTE: This package is currently not yet available on Maven. I will fix this a.s.a.p. **_
+_**NOTE: This package is currently not yet available on Maven. I will fix this a.s.a.p.**_
 
 To use this package in your application add the following Maven dependency:
 ```xml
