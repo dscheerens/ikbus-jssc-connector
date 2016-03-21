@@ -77,4 +77,4 @@ try (IKBusConnection connection = new SerialPortIKBusConnection(serialPortName))
 }
 ```
 
-*Note that the `Thread.sleep()` call is required since without it the serial port would be closed immediately. Any data that was not yet physically written to the I/K-bus network will not be transmitted. *
+*Note that the `Thread.sleep()` call is required since without it the serial port would be closed immediately. Any data that was not yet physically written to the I/K-bus network will not be transmitted.*
