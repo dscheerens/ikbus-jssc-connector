@@ -20,6 +20,11 @@ To use this package in your application add the following Maven dependency:
 </dependency>
 ```
 
+API
+---
+
+Javadoc for this package can be found at the following location: https://dscheerens.github.io/docs/ikbus-jssc-connector/latest/javadoc/
+
 Reading I/K-bus packets
 -----------------------
 
@@ -46,7 +51,7 @@ try (IKBusConnection connection = new SerialPortIKBusConnection(serialPortName))
 }
 ```
 
-Note that you can use the `SerialPortIKBusConnection.getAvailableSerialPorts()` method to find the names of the serial ports which are available on your system.
+*Note that you can use the `SerialPortIKBusConnection.getAvailableSerialPorts()` method to find the names of the serial ports which are available on your system.*
 
 Writing I/K-bus packets
 -----------------------
@@ -71,3 +76,5 @@ try (IKBusConnection connection = new SerialPortIKBusConnection(serialPortName))
 	System.err.println("Failed to write to " + serialPortName + " due to: " + e);
 }
 ```
+
+*Note that the `Thread.sleep()` call is required since without it the serial port would be closed immediately. Any data that was not yet physically written to the I/K-bus network will not be transmitted. *
