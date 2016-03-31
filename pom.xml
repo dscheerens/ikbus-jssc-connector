@@ -10,6 +10,25 @@
 	<description>Package that provides an I/K-bus communication link for serial ports using jSSC (Java Simple Serial Connector).</description>
 	<url>https://github.com/dscheerens/ikbus-jssc-connector</url>
 	
+	<licenses>
+		<license>
+			<name>MIT</name>
+			<url>https://opensource.org/licenses/MIT</url>
+		</license>
+	</licenses>
+	
+	<developers>
+		<developer>
+			<name>Daan Scheerens</name>
+			<email>daan.scheerens@gmail.com</email>
+		</developer>
+	</developers>
+	
+	<scm>
+		<connection>scm:git:https://github.com/dscheerens/ikbus-jssc-connector.git</connection>
+		<url>https://github.com/dscheerens/ikbus-jssc-connector</url>
+	</scm>
+	
 	<dependencies>
 		<dependency>
 			<groupId>net.novazero.ikbus</groupId>
